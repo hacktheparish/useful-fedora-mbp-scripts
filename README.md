@@ -10,7 +10,7 @@ The scripts were written on, and were only tested for the model mentioned above,
 
 ## 🏃Running these scripts
 
-Run these in the following order for sanity's sake. Scripts marked with 🥪 shuold be run with `root` privileges ([like](https://xkcd.com/149/), `sudo`).
+Run these in the following order for sanity's sake. Scripts marked with 🥪 should be run with `root` privileges ([like](https://xkcd.com/149/), `sudo`).
 
 1. 🥪 `disable_lid_sleep.sh` to disable lid sleep function
 2. `create_aliases.sh` to create some fun aliases
@@ -19,7 +19,7 @@ Run these in the following order for sanity's sake. Scripts marked with 🥪 shu
 
 That's it.
 
-## 💝 What ought to happen
+##  💝 What ought to happen
 
 Some scripts should be generated in `~/.mbp-scripts` that enable the following.
 
