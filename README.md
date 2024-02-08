@@ -10,11 +10,21 @@ The scripts were written on, and were only tested for the model mentioned above,
 
 ## 🏃Running these scripts
 
-Run these in the following order for sanity's sake:
+Run these in the following order for sanity's sake. Scripts marked with 🥪 shuold be run with `root` privileges ([like](https://xkcd.com/149/), `sudo`).
 
-1. `disable_lid_sleep.sh` to disable lid sleep function (needs `su`) 
+1. 🥪 `disable_lid_sleep.sh` to disable lid sleep function
 2. `create_aliases.sh` to create some fun aliases
-3. `setup_brightness.sh` to create the scripts that will turn the monitor on and off and enable `turnscreen` alias (needs `su`) 
-4. `setup_lid_monitor.sh` to create the service to turn off screen brightness when the lid is closed (needs `su`) 
+3. 🥪 `setup_brightness.sh` to create the scripts that will turn the monitor on and off and enable `turnscreen` alias 
+4. 🥪 `setup_lid_monitor.sh` to create the service to turn off screen brightness when the lid is closed 
 
-That's it. It should create a `~/.mbp-scripts` folder where it will store some scripts needed by `lid_monitor.service`.
+That's it.
+
+## 💝 What ought to happen
+
+Some scripts should be generated in `~/.mbp-scripts` that enable the following.
+
+* Your laptop will not switch off when you close the lid through tweaks to `/etc/systemd/logind.conf`
+* You will be able to issue `turnscreen on` or `turnscreen off` commands through an `alias` created in `.bashrc` for `~/.mbp-scripts/turnscreen.sh`
+* You will be able to remain polite to your computer and say `please` for `sudo` through adding an `alias` to your `.bashrc` file
+* The screen backlight will be switched on/off whenever you [open/shut](https://piped.video/watch?v=RNUZBHlRH4Y) the laptop lid through installing `"~/.mbp-scripts/lid_monitor.sh"` as `lid_monitor.service` 
+* 
